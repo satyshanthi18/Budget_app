@@ -8,11 +8,11 @@ const RefreshToken = ({ setIsAuthenticated }) => {
       setIsAuthenticated(false);
       Cookies.set("token", "");
       window.location.reload(false);
-    }, 40000);
+    }, 120000);
 
     let timeout2 = setTimeout(() => {
       setShow(true);
-    }, 20000);
+    }, 100000);
 
     return () => {
       clearTimeout(timeout1);
